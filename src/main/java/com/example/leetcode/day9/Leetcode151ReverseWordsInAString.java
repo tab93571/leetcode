@@ -5,6 +5,10 @@ public class Leetcode151ReverseWordsInAString {
 //            将整个字符串反转
 //            将每个单词反转
 
+//    key
+//     if (s.charAt(start) != ' ' || b.charAt(b.length() - 1) != ' ') {
+//        b.append(s.charAt(start));
+
     public String reverseWords(String s) {
         StringBuilder builder = removeSpace(s);
         reverse(0, builder.length() - 1, builder);
@@ -55,4 +59,14 @@ public class Leetcode151ReverseWordsInAString {
             end = start + 1;
         }
     }
+
+//    private void reverseEachWord(StringBuilder builder){
+//        int start = 0;
+//        for(int i = 0 ; i <= builder.length() ; i ++){
+//            if(i == builder.length() || builder.charAt(i) == ' '){
+//                reverse(start, i -1, builder);
+//                start = i + 1;
+//            }
+//        }
+//    }
 }
