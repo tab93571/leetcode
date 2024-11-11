@@ -50,26 +50,26 @@ public class Leetcode239SlidingWindowMaximum {
 //        return result;
 //    }
 }
-class MyQueue{
-    private ArrayDeque<Integer> deque;
-    public MyQueue(){
-        deque = new ArrayDeque<>();
-    }
-
-    public void poll(int val){
-        if(!deque.isEmpty() && deque.peek() == val){
-            deque.pop();
-        }
-    }
-
-    public void add(int val){
-        //  while(!deque.isEmpty() && val >= deque.peekLast()){  >= can not work
-        while(!deque.isEmpty() && val > deque.peekLast()){
-            deque.removeLast();
-        }
-        deque.add(val);
-    }
-    public int peek(){
-        return deque.peek();
-    }
-}
+//class MyQueue{
+//    private ArrayDeque<Integer> deque;
+//    public MyQueue(){
+//        deque = new ArrayDeque<>();
+//    }
+//
+//    public void poll(int val){
+//        if(!deque.isEmpty() && deque.peek() == val){
+//            deque.pop();
+//        }
+//    }
+//
+//    public void add(int val){
+//        //  while(!deque.isEmpty() && val >= deque.peekLast()){  >= can not work
+//        while(!deque.isEmpty() && val > deque.peekLast()){
+//            deque.removeLast();
+//        }
+//        deque.add(val);
+//    }
+//    public int peek(){
+//        return deque.peek();
+//    }
+//}

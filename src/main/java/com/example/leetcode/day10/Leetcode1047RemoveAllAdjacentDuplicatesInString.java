@@ -43,6 +43,7 @@ public class Leetcode1047RemoveAllAdjacentDuplicatesInString {
         }
         return str;
     }
+    //top 是關鍵，是紀錄現在char array end的index
 
 //    public String removeDuplicates(String s) {
 //        // 将 res 当做栈
@@ -67,6 +68,8 @@ public class Leetcode1047RemoveAllAdjacentDuplicatesInString {
 //    }
 
     //雙指針的做法完全想不到，很精妙
+
+    //show為下一個要插入的
 
 //    public String removeDuplicates(String s) {
 //        char[] ch = s.toCharArray();
