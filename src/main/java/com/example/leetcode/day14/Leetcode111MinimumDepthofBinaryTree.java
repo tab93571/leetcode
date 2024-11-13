@@ -36,6 +36,6 @@ public class Leetcode111MinimumDepthofBinaryTree {
         if (root.left == null && root.right == null)
             minDepth = Math.min(minDepth, depth);
         // 递归结束，深度减小
-        depth--; // this line is not necessary
+        depth--; // important,要返回上一層給right用時
     }
 }

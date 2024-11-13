@@ -15,6 +15,24 @@ public class Leetcode104MaximumDepthofBinaryTree {
         return Math.max(leftDepth, rightDepth) + 1;
     }
 
+//    int max = 0;
+//    int tempDepth = 0;
+//    public int maxDepth(TreeNode root) {
+//        ans(root);
+//        return max;
+//
+//    }
+//    private void ans(TreeNode node){
+//        if(node == null){
+//            return;
+//        }
+//        tempDepth ++;
+//        max = tempDepth > max? tempDepth : max;
+//        ans(node.left);
+//        ans(node.right);
+//        tempDepth --; // this is necessary
+//    }
+
 //    Top-Down Approach:
 //    Starts from the root, tracking the current depth as it moves downward to the leaves, and updates the maximum depth encountered along the way.
 //    int max = 0;
