@@ -3,9 +3,9 @@ package com.example.leetcode.day15;
 import com.example.leetcode.day13.TreeNode;
 
 public class Leetcode110BalancedBinaryTree {
-    //not good, two recursive
-    // we can get judege if it's balance by getHeight
-    // since getHeight will get the height from bottom to top
+//    not good, two recursive
+//     we can get judege if it's balance by getHeight
+//     since getHeight will get the height from bottom to top
 //    public boolean isBalanced(TreeNode root) {
 //
 //        if(root == null){

@@ -48,5 +48,27 @@ public class Leetcode513 {
     }
 
     //recursion
+//    int val = 0;
+//    int maxDeep = -1;
+//    public int findBottomLeftValue(TreeNode root) {
+//        val = root.val;
+//        findBottomLeftValue(root,1);
+//        return val;
+//    }
+//
+//    public void findBottomLeftValue(TreeNode root, int deep) {
+//
+//        if(root.left == null && root.right == null && deep > maxDeep){
+//            maxDeep = deep;
+//            val = root.val;
+//            return;
+//        }
+//        if(root.left != null){
+//            findBottomLeftValue(root.left,deep + 1);
+//        }
+//        if(root.right != null){
+//            findBottomLeftValue(root.right,deep + 1);
+//        }
+//    }
 
 }
