@@ -3,13 +3,13 @@ package com.example.leetcode.day28;
 public class Leetcode55 {
     public boolean canJump(int[] nums) {
 
-        if(nums.length == 1){
+        if (nums.length == 1) {
             return true;
         }
         int coverRange = 0;
-        for(int i = 0 ; i <= coverRange ; i ++){
+        for (int i = 0; i <= coverRange; i++) {
             coverRange = Math.max(i + nums[i], coverRange);
-            if(i == nums.length -1){
+            if (coverRange >= nums.length - 1) {
                 return true;
             }
         }

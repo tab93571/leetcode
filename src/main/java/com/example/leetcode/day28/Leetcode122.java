@@ -8,4 +8,8 @@ public class Leetcode122 {
         }
         return result;
     }
+
+    public static void main(String[] args) {
+        new Leetcode122().maxProfit(new int[]{1,90,10,1000});
+    }
 }
